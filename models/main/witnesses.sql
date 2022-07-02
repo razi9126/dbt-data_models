@@ -3,12 +3,10 @@
 
 {% for region in all_sources %}
     SELECT 
-        distinct city,
-        country,
-        latitude,
-        longitude 
+        distinct date_witness, 
+        witness 
     FROM {{ref(region)}} 
-    group by 1,2,3,4 
+    group by 1,2
     {% if not loop.last %}
      UNION ALL 
     {% endif %}

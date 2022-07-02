@@ -23,3 +23,6 @@ This part again required some Jinja finesse. Specially for part(d) I calculated 
 ![Alt text](/image/lineage.png "Lineage")
 
 
+![Alt text](/image/ER.png "ER Diagram")
+
+

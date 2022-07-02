@@ -36,6 +36,15 @@ seeds:
 
 models:
   case_study:
-    # Config indicated by + and applies to all files under models/example/
-    example:
+    +persist_docs:
+      relation: true
+      columns: true
+    renamed:
+      +schema: standardized
       +materialized: view
+    main:
+      +schema: main
+      +materialized: table
+    analytics:
+      +schema: analytics
+      +materialized: table

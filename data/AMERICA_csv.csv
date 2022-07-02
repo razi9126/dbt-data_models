@@ -1,4 +1,4 @@
-datewitness,dateagent,witness,agent,latitude,longitude,city,country,regionhq,hasweapon,hashat,hasjacket,behavior
+date_witness,date_agent,witness,agent,latitude,longitude,city,country,region_hq,has_weapon,has_hat,has_jacket,behavior
 2007-07-23,2007-08-24,Cynthia Howell,Kathleen Munoz,8.35122,-62.64102,Ciudad Guayana,VE,Caracas,False,True,True,fleeing
 1998-12-17,1998-12-22,Travis Austin,Jennifer Swanson,33.54428,-84.23381,Stockbridge,US,New York,True,True,True,tense
 2015-01-22,2015-02-11,David Erickson,Eric Roberts,46.1351,-60.1831,Sydney,CA,Glace Bay,False,True,True,injured

@@ -1,4 +1,4 @@
-datewitness,dateagent,witness,agent,latitude,longitude,city,country,regionhq,hasweapon,hashat,hasjacket,behavior
+date_witness,date_agent,witness,agent,latitude,longitude,city,country,region_hq,has_weapon,has_hat,has_jacket,behavior
 1997-08-01,1997-09-16,Eric Edwards,Gerald Green,33.92866,-6.90656,Temara,MA,Casablanca,False,False,True,fleeing
 1987-04-16,1987-05-22,Kenneth Sparks,Kimberly Gibson,-27.76952,30.79165,Vryheid,ZA,Johannesburg,False,True,True,scared
 1985-07-27,1985-08-21,Douglas Brown,Margaret Ortega,36.08497,9.37082,Siliana,TN,Tunis,False,True,True,talkative

@@ -7,6 +7,6 @@ for sheet_name in sheets:
     sheet = pd.read_excel(excel_file, sheet_name=sheet_name)
 
     ## removing specialcharacter/non-english characters
-    sheet.columns=sheet.columns.str.replace(r'[^0-9a-zA-Z ]', '', regex=True)
-    sheet.to_csv("/Users/raziulhaq/Documents/Work/cascade/case_study/data/%s.csv" % sheet_name, index=False)
+    sheet.columns=sheet.columns.str.replace(r'[^0-9a-zA-Z _]', '', regex=True)
+    sheet.to_csv("/Users/raziulhaq/Documents/Work/cascade/case_study/data/%s_csv.csv" % sheet_name, index=False)
 print("Wrote all sheets as csv")

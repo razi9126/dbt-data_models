@@ -1,4 +1,4 @@
-witnessed,reported,observer,fieldchap,lat,long,place,nation,interpolspot,hasweapon,hashat,hasjacket,stateofmind
+witnessed,reported,observer,field_chap,lat,long,place,nation,interpol_spot,has_weapon,has_hat,has_jacket,state_of_mind
 1998-10-19,1998-11-29,Kevin Mcfarland,Kyle Thomas,-33.79176,151.08057,Eastwood,AU,Sydney,False,True,True,accusatory
 1987-01-09,1987-01-22,Katherine Melton,Samuel Jackson,-33.75881,150.99292,Baulkham Hills,AU,Sydney,False,False,True,paranoid
 1990-04-11,1990-04-15,Julia Avila,Kendra Mercado,-37.88333,145.06667,Carnegie,AU,Melbourne,False,False,True,hostile

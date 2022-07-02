@@ -1,4 +1,4 @@
-datewitness,dateagent,witness,agent,latitude,longitude,city,country,regionhq,hasweapon,hashat,hasjacket,behavior
+date_witness,date_agent,witness,agent,latitude,longitude,city,country,region_hq,has_weapon,has_hat,has_jacket,behavior
 2017-06-04,2017-07-07,Jennifer Harrington,Jennifer Hoffman,27.76056,-15.58602,Maspalomas,ES,Canary,False,False,True,over-complimenting
 2018-12-09,2019-01-18,Christine Greene,Karen Nguyen,27.76056,-15.58602,Maspalomas,ES,Canary,False,True,False,evasive
 2001-04-05,2001-04-23,Laura Lin,Ronnie Anthony,37.74615,-25.66689,Ponta Delgada,PT,Azores,False,True,False,tense

@@ -1,4 +1,4 @@
-datewitness,dateagent,witness,agent,latitude,longitude,city,country,regionhq,hasweapon,hashat,hasjacket,behavior
+date_witness,date_agent,witness,agent,latitude,longitude,city,country,region_hq,has_weapon,has_hat,has_jacket,behavior
 1998-02-25,1998-03-06,Jill Patrick,Rita Johnson,-20.88231,55.4504,Saint-Denis,RE,Reunion,False,False,True,accusatory
 1988-02-16,1988-03-22,Melissa Graham,Stephen Ferguson,-21.15,46.58333,Ikalamavony,MG,Antananarivo,False,False,True,friendly
 1998-12-05,1999-01-04,Christopher Vincent,Frank Gutierrez,-20.88231,55.4504,Saint-Denis,RE,Reunion,False,True,True,fleeing

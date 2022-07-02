@@ -1,4 +1,4 @@
-sighton,fileon,sighter,filer,lat,long,town,nation,reportoffice,hasweapon,hashat,hasjacket,behavior
+sight_on,file_on,sighter,filer,lat,long,town,nation,report_office,has_weapon,has_hat,has_jacket,behavior
 1992-10-30,1992-11-25,Justin Hernandez,Lauren Mccoy,-38.65333,178.00417,Gisborne,NZ,Auckland,False,True,True,over-complimenting
 1999-01-21,1999-03-03,Anna Huynh,Lori Lowery,-38.65333,178.00417,Gisborne,NZ,Auckland,False,False,True,evasive
 2011-10-30,2011-11-04,Susan Duran,James Williams,-44.39672,171.25364,Timaru,NZ,Auckland,False,False,True,scared

@@ -10,7 +10,7 @@
         has_weapon,
         has_hat,
         has_jacket, 
-        behavior,
+        REGEXP_REPLACE(behavior, r"[^a-zA-Z0-9]+", "") as behavior,
         date_trunc(date_witness,month) as witness_month  
     FROM {{ref(region)}} 
 

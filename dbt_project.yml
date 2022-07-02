@@ -35,9 +35,10 @@ seeds:
   +schema: source
 
 models:
-  +persist_docs:
-    relation: true
-    columns: true
-  renamed:
-    +schema: standardized
-    +materialized: view
+  case_study:
+    +persist_docs:
+      relation: true
+      columns: true
+    renamed:
+      +schema: standardized
+      +materialized: view

@@ -1,6 +1,7 @@
 
-### Razi Ul Haq
-### Github repo: https://github.com/razi9126/dbt-data_models/tree/main
+#### Razi Ul Haq
+#### razi9126@gmail.com
+#### Github repo: https://github.com/razi9126/dbt-data_models/tree/main
 
 Hey everyone,
 I’m more comfortable with Word so using this instead of the markdown document.
@@ -17,7 +18,7 @@ For this part I used pure jinja + macro combo to write reuseable code. The funct
 This part basically wanted us to build the core tables that can be then used to make team/task specific datasets. I tried to normalize the tables as far as I could. However, I feel like I am missing some context about the game so I could have deviated somewhere.  Output for this part was written to `models_main`(schema name) dataset.
 
 ### 4
-This part again required some Jinja finesse. Specially for part(d) I calculated all occurences of all possible behaviors, aggregated those each month wise. A simple sum across each column would enable us to get answers for parts (c) and (d). For part (a) and (b) I created the `sighting_properties_monthwise` table that has the required columns(and a few more) to enable us to calculate everything we are looking for by just using `SUM()` and `FILTER`. I believe this is the main purpose of an analytics engineer that they enable business people to find answers to their questions by just these 2 functions that can easily be performed on even Excel.
+This part again required some Jinja finesse. Specially for part(d) I calculated all occurences of all possible behaviors, aggregated those each month wise. A simple sum across each column would enable us to get answers for parts (c) and (d). For part (a) and (b) I created the `sighting_properties_monthwise` table using CTEs with ephemeral materialization. This is because these CTEs wont need to be used in any other tables/view. These CTEs calculate the sorted value occurences for each column that i wanted to include and keep just the top value occurence. The `sighting_properties_monthwise` has the required columns(and a few more) to enable us to calculate everything we are looking for by just using `SUM()` and `FILTER`. I believe this is the main purpose of an analytics engineer that they enable business people to find answers to their questions by just these 2 functions that can easily be performed on even Excel.
 
 ![Alt text](/image/lineage.png "Lineage")
 

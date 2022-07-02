@@ -45,3 +45,6 @@ models:
     main:
       +schema: main
       +materialized: table
+    analytics:
+      +schema: analytics
+      +materialized: table

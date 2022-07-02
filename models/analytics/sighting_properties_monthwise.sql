@@ -1,116 +1,23 @@
-with monthly_repeated_behaviour as (
-    SELECT
-        witness_month,
-        behavior,
-        COUNT(`behavior`) AS `value_occurrence`
-    FROM
-        {{ref('sightings')}}
-    group by
-        1,
-        2
-    order by
-        1 asc,
-        3 desc
-),
+with
 most_repeated_behavior as (
     select
-        witness_month,
-        behavior as most_spotted_behavior
+        *
     from
-        (
-            select
-                witness_month,
-                behavior,
-                value_occurrence,
-                ROW_NUMBER() OVER(
-                    PARTITION BY witness_month
-                    ORDER BY
-                        value_occurrence desc
-                ) as rn
-            from
-                monthly_repeated_behaviour
-            order by
-                1 asc,
-                3 desc
-        )
-    where
-        rn = 1
+        {{ref('most_occuring_behaviour')}}
 ),
-monthly_repeated_city as (
-    SELECT
-        witness_month,
-        city,
-        COUNT(`city`) AS `value_occurrence`
-    FROM
-        {{ref('sightings')}}
-    group by
-        1,
-        2
-    order by
-        1 asc,
-        3 desc
-),
+
 most_repeated_city as (
     select
-        witness_month,
-        city as most_spotted_city
+        *
     from
-        (
-            select
-                witness_month,
-                city,
-                value_occurrence,
-                ROW_NUMBER() OVER(
-                    PARTITION BY witness_month
-                    ORDER BY
-                        value_occurrence desc
-                ) as rn
-            from
-                monthly_repeated_city
-            order by
-                1 asc,
-                3 desc
-        )
-    where
-        rn = 1
+        {{ref('most_occuring_city')}}
 ),
-monthly_repeated_city_agent as (
-    SELECT
-        witness_month,
-        city_agent,
-        COUNT(`city_agent`) AS `value_occurrence`
-    FROM
-        {{ref('sightings')}}
-    group by
-        1,
-        2
-    order by
-        1 asc,
-        3 desc
-),
+
 most_repeated_city_agent as (
     select
-        witness_month,
-        city_agent as most_spotted_agency
+        *
     from
-        (
-            select
-                witness_month,
-                city_agent,
-                value_occurrence,
-                ROW_NUMBER() OVER(
-                    PARTITION BY witness_month
-                    ORDER BY
-                        value_occurrence desc
-                ) as rn
-            from
-                monthly_repeated_city_agent
-            order by
-                1 asc,
-                3 desc
-        )
-    where
-        rn = 1
+        {{ref('most_occuring_city_agent')}}
 )
 select
     sightings.witness_month,
@@ -146,3 +53,5 @@ group by
     2,
     3,
     4
+order by 
+    1

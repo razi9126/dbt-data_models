@@ -31,7 +31,7 @@
     {%- elif col.name in ['has_jacket','coat'] -%}
         {{col.name}} as has_jacket
     {%- elif col.name in ['behaviour','state_of_mind','observed_action'] -%}
-        {{col.name}} as behaviour
+        {{col.name}} as behavior
     {%- else -%}
         {{col.name}}
     {%- endif -%}

@@ -42,3 +42,6 @@ models:
     renamed:
       +schema: standardized
       +materialized: view
+    main:
+      +schema: main
+      +materialized: table

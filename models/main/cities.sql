@@ -3,6 +3,8 @@
 
 {% for region in all_sources %}
     SELECT distinct city,country,latitude,longitude FROM {{ref(region)}} 
-    group by 1,2,3,4
-    {%- if not loop.last -%} UNION ALL {% endif %}
+    group by 1,2,3,4 
+    {% if not loop.last %}
+     UNION ALL 
+    {% endif %}
 {% endfor -%}

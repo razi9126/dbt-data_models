@@ -13,7 +13,7 @@ with monthly_repeated_city_agent as (
     order by
         1 asc,
         3 desc
-),
+)
 select
     witness_month,
     city_agent as most_spotted_agency
